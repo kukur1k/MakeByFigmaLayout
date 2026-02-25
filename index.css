@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family:'Pizza Hut Font CYR';
+    line-height: 1.6;
+    color: #293133;
+    background: #E4EAF8;
+    font-size: 2rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    color: #8987A1;
+    font-size: 1.2rem;
+}
+
+.SignSpace{
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar{
+    background: #FFFFFF;
+    opacity: 60%;
+    padding: 1rem;
+    border-radius: 20px;
+    max-width: 499px;
+    max-height: 70px;
+    border: 1px #FFFFFF;
+}
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    list-style: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #8987A1;
+}
+
+.SignBtn p{
+    font-size: 1.2rem;
+    justify-self: center;
+}
+
+.SignBtn{
+    background: #4E47FF;
+    width: 132px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    justify-content: center;
+}
