@@ -3,13 +3,34 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('Fonts/ofont.ru_Raleway.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Оптимизация загрузки */
+}
 
 body{
-    font-family:'Pizza Hut Font CYR';
+    font-family:raleway;
     line-height: 1.6;
     color: #293133;
     background: #E4EAF8;
     font-size: 2rem;
+    position: relative;
+}
+
+body::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url(MaskGroupZ.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: -1;
+    pointer-events: none;
 }
 
 html{
@@ -24,9 +45,12 @@ header{
     font-size: 1.2rem;
 }
 
+
+
 .SignSpace{
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 .navbar{
@@ -53,6 +77,11 @@ header{
     text-decoration: none;
     color: #8987A1;
 }
+.navbar a:hover{
+    font-weight: bold;
+    color: #191820;
+}
+
 
 .SignBtn p{
     font-size: 1.2rem;
@@ -65,5 +94,89 @@ header{
     height: 50px;
     border-radius: 10px;
     color: white;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.CardTitle{
+    justify-self: center;
+    padding: 5rem;
+    margin-top: 2rem;
+    width: 765px;
+    height: 315px;
+    font-size: 50px;
+    line-height: 6rem;
+    color: #252432;
+}
+
+
+.GiTBtn{
+    margin-top: 1.7rem;
+    background: #252432;
+    color: white;
+    font-size: 16px;
+    width: 211px;
+    height: 60px;
+    border-radius: 10px;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.CardWWd{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+}
+
+.GenBoxWWD{
+    max-width: 50%;
+}
+.WWD{
+    padding: 8rem;
+}
+
+.WWD h2{
+    padding-left: 3rem;
+}
+
+.BoxWWD{
+    max-height: 280px;
+    max-width: 280px;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.CardWWd h3{
+    font-size: 20px;
+}
+
+.CardWWd p{
+    font-size: 14px;
+}
+
+
+.LeftTopWWd{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.RectangleHorizWWD{
+    display: flex;
+    height: 280px;
+    width: 623px;
+    background: white;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.GenBoxWWD{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
