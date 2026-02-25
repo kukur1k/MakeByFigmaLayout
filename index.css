@@ -133,7 +133,11 @@ header{
 }
 
 .GenBoxWWD{
-    max-width: 50%;
+    max-width: 55%;
+    /* max-width: 550px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 .WWD{
     padding: 8rem;
@@ -143,12 +147,20 @@ header{
     padding-left: 3rem;
 }
 
+.columnBox h3{
+    margin-bottom: 1rem;
+}
+
 .BoxWWD{
-    max-height: 280px;
-    max-width: 280px;
+    height: 280px;
+    width: 280px;
     background: white;
     border-radius: 8px;
     padding: 1rem;
+}
+
+.BoxWWD h3{
+    margin-bottom: 1rem;
 }
 
 .CardWWd h3{
@@ -175,8 +187,35 @@ header{
     padding: 1rem;
 }
 
-.GenBoxWWD{
+.RectangleHorizWWD h3{
+    margin-bottom: 1rem;
+}
+
+
+.RowBox{
     display: flex;
     flex-wrap: wrap;
+    height: 623px;
+    width: 280px;
+    background: white;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.LeftWD{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 280px;
     gap: 2rem;
+}
+
+.columnBox p{
+    margin-bottom: 9.5rem;
+}
+
+
+#WWDPhooto{
+    height: 280px;
+    width: 280px;
+    object-fit: contain;
 }
