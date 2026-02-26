@@ -146,6 +146,7 @@ header{
 
 .WWD h2{
     padding-left: 3rem;
+    font-size: 5rem;
 }
 
 .columnBox h3{
@@ -386,3 +387,45 @@ footer{
     flex-wrap: nowrap;
     align-items: center;
 }
+
+/* ==========================COW============================ */
+
+.HeadCOW{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.COWTitle p{
+    color: #8987A1;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 35rem;
+}
+
+.COWTitle{
+    justify-content: center;
+    align-items: center;
+}
+
+.COWTitle h3{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.Review{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background: white;
+    border-radius: 20px;
+    padding: 0.5rem;
+    align-items: center;
+    justify-self: center;
+    max-width: 25rem;
+}
+
+.Review p{
+    font-size: 1rem;
+}
+
