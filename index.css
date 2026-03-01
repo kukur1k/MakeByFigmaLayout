@@ -411,6 +411,16 @@ footer{
 /* ==========================COW============================ */
 
 .HeadCOW{
+    position: relative;
+}
+
+#COWImg{
+    position: absolute;
+    left: 30rem;
+    opacity: 0.3;
+}
+
+.HeadCOW{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
@@ -558,4 +568,65 @@ footer{
 
 .TouchBtn:hover{
     transform: scale(1.1);
+}
+
+
+/* ======================FAQ=========================== */
+
+.FAQ{
+    margin-bottom: 9rem;
+    position: relative;
+}
+
+.FAQSpace{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+    justify-self: center;
+}
+
+#ImgFAQ{
+    position: absolute;
+    top: 8rem;
+}
+
+.TitleFAQ{
+    padding: 6rem;
+    margin-right: 5rem;
+}
+
+.TitleFAQ h2{
+    max-width: 5rem;
+}
+
+.LIFAQ{
+    background: white;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 35rem;
+    position: relative;
+}
+
+.LIFAQ h4{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.LIFAQ p{
+    font-size: 0.8rem;
+}
+
+
+.subText{
+    display: none;
+}
+
+.openElem{
+    position: absolute;
+    left: 34rem;
+    top: 1rem;
+    padding: 0.2rem;
 }

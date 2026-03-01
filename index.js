@@ -16,3 +16,17 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
+// ================================FAQ========================
+
+function openBox(element, plusimg) {
+    display = document.getElementById(element).style.display;
+    if (display == "none") {
+        document.getElementById(element).style.display = "block";
+        document.getElementById(plusimg).src = "Frame minus.svg"
+
+    } else{
+        document.getElementById(element).style.display = "none";
+        document.getElementById(plusimg).src = "Frame plus.svg"
+    }
+}
