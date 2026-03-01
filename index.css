@@ -181,6 +181,11 @@ header{
     background: white;
     border-radius: 8px;
     padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.BoxWWD:hover{
+    transform: scale(1.1);
 }
 
 .BoxWWD h3{
@@ -209,6 +214,11 @@ header{
     background: white;
     border-radius: 4px;
     padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.RectangleHorizWWD:hover{
+    transform: scale(1.1);
 }
 
 .RectangleHorizWWD h3{
@@ -224,6 +234,11 @@ header{
     background: white;
     border-radius: 4px;
     padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.RowBox:hover{
+    transform: scale(1.1);
 }
 
 .LeftWD{
@@ -421,6 +436,7 @@ footer{
 }
 
 /* ==========================COW============================ */
+
 
 .HeadCOW{
     position: relative;
@@ -684,6 +700,10 @@ footer{
         padding: 1rem;
     }
     
+    .CheckOurWork{
+        color: #191820 !important;
+    }
+
 
     .navbar ul {
         gap: 1rem;
@@ -842,6 +862,9 @@ footer{
         display: none;
     }
 
+    .price{
+        flex-wrap: nowrap;
+    }
     
 
 }
