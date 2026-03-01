@@ -25,7 +25,7 @@ body::before{
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: url(MaskGroupZ.svg);
+    background-image: url(pict/MaskGroupZ.svg);
     background-position: center;
     background-repeat: no-repeat;
 
@@ -51,6 +51,18 @@ header{
     display: flex;
     gap: 1rem;
     align-items: center;
+}
+
+.SignSpace a{
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: #8987A1;
+}
+
+.SignSpace a:hover{
+    font-weight: bold;
+    color: #191820;
+    transform: scale(1.05);
 }
 
 .navbar{
@@ -244,7 +256,7 @@ footer{
     justify-self: center;
     font-size: 1.2rem;
     color: #8987A1;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .ServicesNav ul{
@@ -515,9 +527,10 @@ footer{
 
 /* ================LGIT======================= */
 
+
 .Forms{
     justify-self: center;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
 }
 
 .Forms h2{
@@ -629,4 +642,29 @@ footer{
     left: 34rem;
     top: 1rem;
     padding: 0.2rem;
+}
+
+
+.floating-button{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: white;
+    opacity: 0.7;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.floating-button:hover{
+    transform: scale(1.05);
+}
+.floating-button a{
+    color: #191820;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
