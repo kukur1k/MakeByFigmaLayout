@@ -6,10 +6,6 @@ const swiper = new Swiper('.swiper', {
   centeredSlides: true,
   initialSlide: 1,
 
-
-
-
-  // Navigation arrows
   navigation: {
     nextEl: '.next',
     prevEl: '.prev',

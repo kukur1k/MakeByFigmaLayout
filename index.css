@@ -153,11 +153,11 @@ header{
     display: flex;
     flex-wrap: wrap;
     padding: 3rem;
+    justify-self: center;
 }
 
 .GenBoxWWD{
-    max-width: 55%;
-    /* max-width: 550px; */
+    width: 700px;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -229,7 +229,7 @@ header{
 .LeftWD{
     display: flex;
     flex-wrap: wrap;
-    max-width: 280px;
+    max-width: 312px;
     gap: 2rem;
 }
 
