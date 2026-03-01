@@ -120,7 +120,7 @@ header{
     justify-self: center;
     padding: 5rem;
     margin-top: 2rem;
-    width: 765px;
+    width: 50%;
     height: 315px;
     font-size: 50px;
     line-height: 6rem;
@@ -167,7 +167,7 @@ header{
 }
 
 .WWD h2{
-    padding-left: 3rem;
+    padding-left: 6rem;
     font-size: 5rem;
 }
 
@@ -494,6 +494,7 @@ footer{
     justify-content: center;
 }
 
+
 .swiper-slide {
     flex-shrink: 0;
     width: 100%;
@@ -506,6 +507,9 @@ footer{
     transform: scale(0.9);
 }
 
+
+
+
 .swiper-slide-active {
     opacity: 1;
     transform: scale(1);
@@ -516,8 +520,8 @@ footer{
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    
 }
+
 
 
 .prev:hover, .next:hover{
@@ -667,4 +671,177 @@ footer{
     color: #191820;
     text-decoration: none;
     font-size: 1.5rem;
+}
+
+@media (max-width:768px){
+
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+
+    .navbar ul {
+        gap: 1rem;
+    }
+    
+    .CardTitle {
+        width: 100%;
+        height: 20%;
+        padding: 2rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .WWD{
+        justify-self: center;
+        justify-items: center;
+        padding: 1rem;
+    }
+
+    .CardWWd{
+        margin-left: 2rem;
+    }
+
+    
+    .WWD h2 {
+        font-size: 3rem;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .GenBoxWWD {
+        width: 100%;
+    }
+    
+    .LeftTopWWd, .RectangleHorizWWD {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .RectangleHorizWWD p{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+
+    .RowBox{
+        max-height: 41%;
+    }
+
+    .RowBox p{
+        margin-bottom: 0.5rem;
+    }
+
+    .RowBox img{
+        margin: 0;
+    }
+    
+    .BoxWWD{
+        width: 100%;
+        height: auto;
+    }
+    
+    .HeadCOW {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .COWTitle h3 {
+        font-size: 3rem;
+    }
+    
+    .prev, .next{
+        display: none;
+    }
+
+    .swiper-slide{
+        max-width: 100%;
+    }
+
+
+    .Pricing {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .pricRight {
+        padding: 2rem;
+        padding-right: 2rem;
+    }
+    
+    .FAQSpace {
+        width: 95%;
+    }
+    
+    .TitleFAQ {
+        padding: 1rem;
+        margin-right: 0;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .TitleFAQ h2{
+        max-width: 100%;
+    }
+    
+
+    .LIFAQ {
+        width:85%;
+        padding: 1.2rem;
+        padding-right: 2rem;
+    }
+
+    .openElem{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    
+    
+    .Forms {
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .Forms h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    footer {
+        width: 90%;
+        padding: 2rem;
+        justify-items: center;
+    }
+    
+    .Services {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .link{
+        justify-items: center;
+    }
+    
+    .BottomFooter {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    #COWImg, #ImgFAQ {
+        display: none;
+    }
+
+    
+
 }
