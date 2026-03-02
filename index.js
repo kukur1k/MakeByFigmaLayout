@@ -26,3 +26,9 @@ function openBox(element, plusimg) {
         document.getElementById(plusimg).src = "pict/Frame plus.svg"
     }
 }
+
+//=====================FormEnter=========================
+const GiTBtn = document.getElementById('TouchBtn');
+GiTBtn.addEventListener('click', function() {
+    alert("Your email has been sent successfully. This is very important to us");
+})
