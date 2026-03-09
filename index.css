@@ -524,6 +524,7 @@ footer{
     max-width: 100%;
     margin: 2rem auto;
     padding: 20px 0 40px;
+    position: relative;
 }
 
 .swiper-wrapper {
@@ -723,6 +724,19 @@ footer{
 }
 
 
+.modal{
+    background: white;
+    border-radius: 10px;
+    height: 60rem;
+    width: 60rem;
+    justify-self: center;
+    position: absolute;
+    top: 0;
+    left: 30rem;
+    z-index: 2;
+}
+
+
 
 @media (max-width:768px){
 
@@ -735,6 +749,8 @@ footer{
         padding: 1rem;
     }
     
+    
+
     .CheckOurWork{
         color: #191820 !important;
     }
