@@ -16,8 +16,8 @@ const swiper = new Swiper('.swiper', {
 // ================================FAQ========================
 
 function openBox(element, plusimg) {
-    display = document.getElementById(element).style.display;
-    if (display == "none") {
+    display = document.getElementById(element);
+    if (display.offsetParent == null) {
         document.getElementById(element).style.display = "block";
         document.getElementById(plusimg).src = "pict/Frame minus.svg"
 
@@ -30,24 +30,19 @@ function openBox(element, plusimg) {
 //=====================FormEnter=========================
 const GiTBtn = document.getElementById('TouchBtn');
 GiTBtn.addEventListener('click', function() {
+    const form = document.querySelector('.form');
+    const inputs = form.querySelectorAll('input, textarea');
+
+    inputs.forEach(element => {
+        element.value = '';
+    });
+
     alert("Your email has been sent successfully. This is very important to us");
-    GiTBtn
 })
 
 //=====================OpenImg============================
 
-function OpenImg(){
-    var image = document.getElementById('SwiperImg');
-    var source = image.src;
+function OpenImg(element){
+    var source = element.src;
     window.open(source);
-}
-
-function OpenModal(){
-    const modal = document.createElement('div');
-    const image = document.createElement('div');
-    const src = document.getElementById('SwiperImg1').src;
-    image.setAttribute('src', src);
-    modal.className = 'modal';
-    document.querySelector('.swiper').appendChild(modal);
-    modal.appendChild(image);
 }
